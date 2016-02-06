@@ -3,11 +3,53 @@
     src: url(../fonts/Lato-Light.ttf);
 }
 
-body *{
+@font-face{
+    font-family: LatoBlack;
+    src: url(../fonts/Lato-Black.ttf);
+}
+        
+body{
     font-family: LatoLight;
+}
+
+main{
+    text-align: center;
 }
 
 main h1{
     font-weight:900;
     letter-spacing: 4px;
+}
+
+.green-logo {
+  color: white;
+  background: #00D0A0;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+.green-logo span {
+  margin-left: -15px;
+}
+
+.green-logo .line {
+  background: #fff;
+    height: 52px;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 93px;
+    transform: rotate(32deg);
+}   
+#logo-section {
+    font-weight:900;
+    font-family: LatoBlack;
+  border: 5px solid #00D0A0;
+    background: #FFF;
+  color: #00D0A0;
+      display: inline-block;
+  margin: 50px;
+    font-weight:900;
+  font-size: 50px;
+  position: relative;
 }
