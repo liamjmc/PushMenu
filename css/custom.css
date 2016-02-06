@@ -48,7 +48,7 @@ main h1{
     background: #FFF;
   color: #00D0A0;
       display: inline-block;
-  margin: 50px;
+  margin-bottom: 50px;
     font-weight:900;
   font-size: 50px;
   position: relative;
