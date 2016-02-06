@@ -1,0 +1,13 @@
+@font-face{
+    font-family: LatoLight;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+body *{
+    font-family: LatoLight;
+}
+
+main h1{
+    font-weight:900;
+    letter-spacing: 4px;
+}

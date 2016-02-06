@@ -19,8 +19,7 @@ html * {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  color: #243040;
+  color: #000;
   background-color: #ffffff;
 }
 
@@ -30,7 +29,7 @@ body, html {
 }
 
 a {
-  color: #9cb3a8;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -47,7 +46,7 @@ main {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 200px 5%;
-  background-color: #9cb3a8;
+  background-color: #fff;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -71,8 +70,7 @@ main h1 {
   margin-bottom: 1em;
 }
 main p {
-  font-family: "Merriweather", serif;
-  color: #d6dfdb;
+  color: #000;
   max-width: 450px;
   margin: 0 auto;
   line-height: 1.6;
@@ -103,11 +101,11 @@ main p {
   top: 20px;
   height: 54px;
   width: 54px;
-  background-color: #243040;
-  border-radius: 50%;
+  background-color: #000;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
+    border-radius: 50%;
   white-space: nowrap;
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
@@ -243,7 +241,7 @@ main p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #243040;
+  background-color: #000;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
   -moz-transition: visibility 0s 0.7s;
@@ -299,7 +297,7 @@ main p {
   margin-bottom: 1.7em;
   font-size: 1.3rem;
   font-weight: 800;
-  color: #080b0f;
+  color: #fff;
   text-transform: uppercase;
 }
 .cd-nav h2::after {
@@ -319,7 +317,6 @@ main p {
   margin: 1.6em 0;
 }
 .cd-nav .cd-primary-nav a {
-  font-family: "Merriweather", serif;
   font-size: 2.4rem;
   color: rgba(255, 255, 255, 0.3);
   display: inline-block;
