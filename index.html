@@ -13,18 +13,13 @@
 	<title>The Dev Club - Menu</title>
 </head>
 <body>
-	<main>
-        <!--<canvas id="canvas" style="background: #fff;position: fixed;margin: auto;top: 0;bottom: 0;left: 0;right: 0;max-width:100vw;"></canvas>-->
-		<div id="logo-section" class="green-logo">
-            dev
-            <div class="line">
-            </div>
-            <span>club</span>
-        </div>
-
-		<p>Ensuring you are part of the
-very best on the web.</p>
-	</main>
+	<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+            dev club
+        </h1>
+    </div>
+</header>
 
 	<a href="#cd-nav" class="cd-nav-trigger">Menu 
 		<span class="cd-nav-icon"></span>
@@ -33,7 +28,7 @@ very best on the web.</p>
 			<circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
 		</svg>
 	</a>
-	
+	<div style="height:300vh;width:100vw;"></div>
 	<div id="cd-nav" class="cd-nav">
 		<div class="cd-navigation-wrapper">
 			<div class="cd-half-block">
@@ -63,9 +58,11 @@ very best on the web.</p>
 		</div> <!-- .cd-navigation-wrapper -->
 	</div> <!-- .cd-nav -->
 <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/classie.js"></script>
+
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script>
-    var c = document.getElementById("canvas");
+    /*var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 
 var size = 512;
@@ -113,7 +110,22 @@ var loop = function(){
 	setTimeout(loop, 0);
 };
 
-loop();
+loop();*/
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
 </script>
 </body>
 </html>

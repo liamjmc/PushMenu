@@ -53,3 +53,62 @@ main h1{
   font-size: 50px;
   position: relative;
 }
+header {
+  width: 100%;
+    color: green;
+    height: 50vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: transparent;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;}
+  header h1#logo {
+        display: inline-block;
+    line-height: 50vh;
+    height: 150px;
+    float: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 25vh;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  width: 100vw;
+    text-align: center;
+    color: green;
+    height: 50vh;}
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav a {
+      line-height: 150px;
+      margin-left: 20px;
+      color: #9fdbfc;
+      font-weight: 700;
+      font-size: 18px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      header nav a:hover {
+        color: white; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+      line-height: 130px;
+      font-size: 30px; }
+    header.smaller nav a {
+      line-height: 75px; }
+body .cd-nav-trigger, body .cd-nav *{
+    z-index:999;   
+}
