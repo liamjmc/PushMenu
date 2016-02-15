@@ -14,7 +14,6 @@
 </head>
 <body>
 	<main>
-        <canvas id="canvas" style="background: #fff;position: fixed;margin: auto;top: 0;bottom: 0;left: 0;right: 0;max-width:100vw;"></canvas>
 		<div id="logo-section" class="green-logo">
             dev
             <div class="line">
@@ -64,56 +63,5 @@ very best on the web.</p>
 	</div> <!-- .cd-nav -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-<script>
-    var c = document.getElementById("canvas");
-var ctx = c.getContext("2d");
-
-var size = 512;
-
-c.width = size;
-c.height = size;
-
-var scale = 100;
-
-var x = 0;
-var y = 0;
-
-var a = 1.7;
-var b = 1.7;
-var c = 0.6;
-var d = 1.2;
-
-function hslToRgb(h){
-    var r, g, b;
-
-    var hue2rgb = function hue2rgb(t){
-        if(t < 0) t += 1;
-        if(t > 1) t -= 1;
-        if(t < 1/6) return 6 * t;
-        if(t < 1/2) return 1;
-        if(t < 2/3) return (2/3 - t) * 6;
-        return 0;
-    }
-    r = hue2rgb(h + 1/3);
-    g = hue2rgb(h);
-    b = hue2rgb(h - 1/3);
-
-    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)].join(",");
-}
-
-var loop = function(){
-	for (var i=0; i<1000; i++) {
-    var x1 = x;
-    var y1 = y;
-    x = Math.sin(a*y1) + c*Math.cos(a*x1);
-    y = Math.sin(b*x1) + d*Math.cos(b*y1);
-    ctx.fillStyle = "rgba("+hslToRgb(Math.atan2(x-x1, y-y1)/(2*Math.PI))+",0.3)";
-    ctx.fillRect(x*scale + size/2, y*scale + size/2, 0.3, 0.3);
-  }
-	setTimeout(loop, 0);
-};
-
-loop();
-</script>
 </body>
 </html>
