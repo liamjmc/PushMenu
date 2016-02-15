@@ -70,11 +70,11 @@ header {
     transition: height 0.3s;}
   header h1#logo {
         display: inline-block;
-    line-height: 50vh;
+    line-height: 81vh;
     height: 150px;
     float: left;
     font-family: "Oswald", sans-serif;
-    font-size: 25vh;
+    font-size: 15vh;
     color: white;
     font-weight: 400;
     -webkit-transition: all 0.3s;
