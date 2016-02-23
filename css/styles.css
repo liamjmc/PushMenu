@@ -1,0 +1,76 @@
+
+html body{
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:20px;
+    height:100%;
+}
+    
+body a{
+    color:blue;
+}
+
+body h2{
+    margin-bottom: 15px;
+}
+
+main header{
+    height:100vh;
+    position:relative;
+}
+
+main h2{
+    font-size:45px;
+}
+
+.container{
+    padding: 100px 0;
+}
+
+section p, section h2{
+    text-align: center;
+}
+
+section label{
+    margin-bottom:10px;
+}
+
+#about-us{
+    background: #222;
+    color:#fff;
+}
+
+#about-us p{
+    margin-top:50px;
+}
+
+header #logo-row{
+    height:100vh;
+    position: relative;
+    width: 100%;
+}
+
+header #logo-row #logo{
+    float:right;
+    height: 40px;
+    margin-right:20px;
+    margin:20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color:limegreen;
+    border:3px solid limegreen;
+    padding:5px;
+    font-weight:900;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+header #logo-row #logo .fixed-logo{
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+footer{
+    padding: 50px 0;
+}

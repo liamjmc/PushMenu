@@ -1,67 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->	<link rel="stylesheet" href="css/custom.css"> <!-- Custom style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>The Dev Club - Menu</title>
+    
+    <title>The Dev Club</title>
+    
+    <meta name="description" content="We make the best things on the internet.">
+    <meta name="keywords" content="website development, company website devlopment, e-commerce website devlopment, website development london, web development, web design">
+    <meta name="author" content="The Development Club">
+        
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300"><!-- Lato -->
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> <!-- Reset -->
+    
+    <link rel="stylesheet" type="text/css" href="css/push-menu.css"> <!-- Resource style -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Main styles -->
+    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js   "></script> <!-- Modernizr -->
 </head>
 <body>
+    <!-- Push menu -->
+    <section>
+        <a href="#cd-nav" id="cd-nav-link" class="cd-nav-trigger">Menu 
+    		<span class="cd-nav-icon"></span>
+    
+    		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+    			<circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+    		</svg>
+    	</a>
+    	
+    	<div id="cd-nav" class="cd-nav">
+    		<div class="cd-navigation-wrapper">
+    			<div class="cd-half-block">
+    				<h2>THE DEV CLUB</h2>
+    
+	   			<nav>
+	   				<ul class="cd-primary-nav">
+	   					<li><a href="#top" class="selected">Home</a></li>
+	   					<li><a href="#about-us">About us</a></li>
+	   					<li><a href="#what-we-do">What we do</a></li>
+	   					<li><a href="#what-we-think">What we think</a></li>
+	   					<li><a href="blog">Blog</a></li>
+                        <li><a href="#who-we-are">Who we are</a></li>
+                        <li><a href="#get-in-touch">Get in touch</a></li>
+	   				</ul>
+	   			</nav>
+	   		</div><!-- .cd-half-block -->
+	   		
+	   		<div class="cd-half-block">
+	   			<address>
+	   				<ul class="cd-contact-info">
+	   					<li><a href="mailto:info@myemail.co">hello@devclub.co.uk</a></li>
+	   					<li>
+	   						<span>London, UK</span>
+	   					</li>
+	   				</ul>
+	   			</address>
+	   		</div> <!-- .cd-half-block -->
+	   	</div> <!-- .cd-navigation-wrapper -->
+	   </div> <!-- .cd-nav -->
+    </section>
+    
+    <!-- Main -->
 	<main>
-		<div id="logo-section" class="green-logo">
-            dev
-            <div class="line">
+        <!-- Header -->
+        <header id="top">
+            <div id="logo-row">
+                <h1 id="logo">
+                    /dev/club
+                </h1>
             </div>
-            <span>club</span>
+        </header>
+        
+        <!-- About Us -->
+        <section id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>About Us</h2>
+                        <p>We’re a London web design and web development agency, providing fresh, creative digital services to businesses who want to grow online. Focusing on results, we use our technical skill and industry insight to help you meet your digital goals. Whether that’s lowering your bounce rate with interactive web design or bringing brand new traffic and income streams to your website. Talk to us about your project to get started…</p>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!-- What we do -->
+        <section id="what-we-do">
+        
+        </section>
+        
+        <!-- What we think -->
+        <section id="what-we-think">
+        
+        </section>
+        
+        <!-- Blog -->
+        <section id="blog">
+        
+        </section>
+        
+        <!-- Who we are -->
+        <section id="who-we-are">
+        
+        </section>
+        
+        <!-- Get in touch -->
+        <section id="get-in-touch">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    
+                        <h2>Get in touch</h2>
+                    
+                        <form action="http://formspree.io/hello@devclub.co.uk" role="form" method="POST" autocomplete="on">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control form-input" placeholder="Full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="_replyto">Your Email</label>
+                                <input type="email" name="_replyto" class="form-control form-input" placeholder="Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Tell me about your project</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" width="100%" placeholder="Message" required></textarea>
+                            </div>
+
+                            <div>
+                                <input type="submit" class="btn btn-primary" value="Send">
+                                <input type="hidden" name="_subject" value="New submission!" />
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div> <!-- Get in touch row -->
+            </div> <!-- Get in touch container -->
+        </section>
+        
+        <!-- Footer -->
+        <footer id="bottom">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>The Development Club LLP</strong>
+                    </h4>
+                    <p>London, UK.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:hello@devclub.co.uk">hello@devclub.co.uk</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/DevClubUK/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/devclubuk"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-		<p>Ensuring you are part of the
-very best on the web.</p>
+        </footer>
 	</main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script><!-- JQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Bootstrap --> 
 
-	<a href="#cd-nav" class="cd-nav-trigger">Menu 
-		<span class="cd-nav-icon"></span>
-
-		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-			<circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-		</svg>
-	</a>
-	
-	<div id="cd-nav" class="cd-nav">
-		<div class="cd-navigation-wrapper">
-			<div class="cd-half-block">
-				<h2>THE DEV CLUB</h2>
-
-				<nav>
-					<ul class="cd-primary-nav">
-						<li><a href="#0" class="selected">Home</a></li>
-						<li><a href="#0">About us</a></li>
-						<li><a href="#0">Expertise</a></li>
-						<li><a href="#0">Team</a></li>
-						<li><a href="#0">Contact</a></li>
-					</ul>
-				</nav>
-			</div><!-- .cd-half-block -->
-			
-			<div class="cd-half-block">
-				<address>
-					<ul class="cd-contact-info">
-						<li><a href="mailto:info@myemail.co">hello@devclub.co.uk</a></li>
-						<li>
-							<span>London, UK</span>
-						</li>
-					</ul>
-				</address>
-			</div> <!-- .cd-half-block -->
-		</div> <!-- .cd-navigation-wrapper -->
-	</div> <!-- .cd-nav -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/about-us.js"></script> <!-- About us -->
+    <script src="js/blog.js"></script> <!-- Blog -->
+    <script src="js/get-in-touch.js"></script> <!-- Get in touch -->
+    <script src="js/header.js"></script> <!-- Header -->
+    <script src="js/push-menu.js"></script> <!-- Push menu -->
+    <script src="js/what-we-do.js"></script> <!-- What we do -->
+    <script src="js/who-we-are.js"></script> <!-- Who we are -->
 </body>
 </html>
